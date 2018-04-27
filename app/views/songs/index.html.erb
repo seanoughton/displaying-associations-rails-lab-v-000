@@ -1,5 +1,6 @@
 Artist Name - Song Title
-
 <%@songs.each do |song| %>
+ <%binding.pry%>
+  <%= link_to song.title, song_path(song) %>
   <%=song.artist_name%> - <%=song.title%>
 <%end%>
