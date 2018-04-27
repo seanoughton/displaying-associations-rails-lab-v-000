@@ -1,5 +1,5 @@
 <h1> Artist Show Page </h1>
 <%binding.pry%>
 <%@artist.songs.each do |song| %>
-  <%= link_to <%=song.title %>, song_path(song) %>
+  <%= link_to song.title, song_path(song) %>
 <%end%>
