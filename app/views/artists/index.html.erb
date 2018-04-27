@@ -1,5 +1,8 @@
 <h1> All of the Artists </h1>
-<%binding.pry%>
-<%@artists.each do |artist| %>
-  <%= artist.name %>
-<%end%>
+
+<ul>
+  <%@artists.each do |artist| %>
+    <li> Artist Name: <%= artist.name %> </li>
+    <li> Artist Song Count:<%= artist.song_count %> </li>
+  <%end%>
+</ul>
